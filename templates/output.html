@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sentiment Analysis Result</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding-top: 50px;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        .result {
+            margin-top: 50px;
+        }
+
+        .result h2 {
+            color: #333;
+            font-size: 24px;
+        }
+
+        .result p {
+            color: #666;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sentiment Analysis Result</h1>
+        <div class="result">
+            <h2>Result</h2>
+            {% if prediction %}
+                <p>{{ prediction }}</p>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>

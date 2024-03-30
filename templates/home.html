@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sentiment Analysis On Yonex Reviews</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding-top: 50px;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        textarea {
+            width: 60%;
+            height: 150px;
+            margin: 20px auto;
+            display: block;
+            border-radius: 8px;
+            border: 2px solid #db2bc0;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            cursor: pointer;
+            border-radius: 8px;
+            font-size: 18px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .result {
+            margin-top: 50px;
+        }
+
+        .result h2 {
+            color: #333;
+            font-size: 24px;
+        }
+
+        .result p {
+            color: #666;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sentiment Analysis On Yonex Reviews</h1>
+        <form action="/predict" method="post">
+            <textarea name="text" placeholder="Enter text..."></textarea>
+            <button type="submit">Predict</button>
+        </form>
+    </div>
+</body>
+</html>
